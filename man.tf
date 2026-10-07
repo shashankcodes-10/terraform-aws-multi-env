@@ -8,7 +8,7 @@ locals {
       table_count    = 1
     }
 
-     stg = {
+    stg = {
       instance_count = 2
       bucket_count   = 2
       table_count    = 2

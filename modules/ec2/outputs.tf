@@ -1,7 +1,7 @@
 output "instance_ids" {
-    value = aws_instance.my-instance[*].id
+  value = aws_instance.my_instance[*].id
 }
 
 output "public_ips" {
-   value = aws_instance.my-instance.public_ip
+  value = aws_instance.my_instance[*].public_ip
 }
