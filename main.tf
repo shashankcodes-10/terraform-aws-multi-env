@@ -29,7 +29,7 @@ module "ec2" {
 
   env             = terraform.workspace
   instance_count  = local.current.instance_count
-  ami             = var.ami
+  ami             = data.aws_ami.ubuntu.id
   instance_type   = var.instance_type
   key_public_path = var.key_public_path
 }
